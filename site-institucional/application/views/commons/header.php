@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,	initial-scale=1">
-	<meta name="description" content="Exercício	de	exemplo	do capítulo	5 do livro Codeigniter Teoria na Prática">
+	<meta name="description" content="<?=$description;?>">
 	<meta name="author" content="Marcelo Cordeiro Basílio">
-	<title>Site	Institucional</title>
+	<title>Site	Institucional - <?=$title;?></title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 	<link href="http://getbootstrap.com/assets/css/ie10-viewportbug-workaround.css" rel="stylesheet">
 	<link href="<?=base_url('assets/css/internas.css')?>" rel="stylesheet">
@@ -30,13 +30,7 @@
 				<a	class="navbar-brand" href="#">LCI</a>
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
-				<ul	class="nav	navbar-nav">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">A Empresa</a></li>
-					<li><a href="#">Serviços</a></li>
-					<li><a href="#">Trabalhe Conosco</a></li>
-					<li><a href="#">Fale Conosco</a></li>
-				</ul>
+				<?php $this->load->view('commons/menu'); ?>
 			</div>
 		</div>
 	</nav>

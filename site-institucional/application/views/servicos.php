@@ -1,5 +1,3 @@
-<?php $this->load->view('commons/header');?>
-
 <div class="container">
 	<div class="page-header">
 		<h1>Serviços</h1>
@@ -41,5 +39,3 @@
 		</div>
 	</div>
 </div> <!--./container-->
-
-<?php $this->load->view('commons/footer');?>

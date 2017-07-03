@@ -5,6 +5,11 @@ class Empresa extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('empresa');
+		$data['title'] = "LCI | Empresa";
+		$data['description'] = "Informações sobre a empresa";
+		
+		$this->load->view('commons/header', $data);
+		$this->load->view('empresa', $data);
+		$this->load->view('commons/footer');
 	}
 }
