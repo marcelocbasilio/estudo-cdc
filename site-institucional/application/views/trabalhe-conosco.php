@@ -9,12 +9,12 @@
 
 			<?php if($formErrors){ ?>
 			<div class="alert alert-danger">
-				<?=$formErrors;?>
+				<?php echo $formErrors;?>
 			</div> <!--./alert alert-danger-->
 			<?php } else { ?>
 				<?php if($this->session->flashdata('success-msg')) { ?>
 				<div class="alert alert-success">
-					<?=$this->session->flashdata('success-msg');?>
+					<?php echo $this->session->flashdata('success-msg');?>
 				</div> <!--./alert alert-success-->
 			<?php }}?>
 
@@ -97,7 +97,8 @@
 							set_value('curriculo'),
 							array("class"=>"input-file form-control input-md","required"=>"","type"=>"text")
 						);
-						?>	
+						?>
+						<abbr title="(doc|docx|pdf|zip|rar / 5120Kb)"><span class="help-block">(Arq. Aceitos / Tam. Máximo)</span></abbr>
 					</div> <!--./col-md-8-->
 				</div> <!--./form-group-->
 
@@ -132,11 +133,3 @@
 		</div> <!--./col-md-4-->
 
 	</div> <!--./row-->
-
-</div> <!--./container--><div class="container">
-	<div class="page-header">
-		<h1>Trabalhe Conosco</h1>
-	</div> <!--./page-header-->
-	<p class="lead">Você está criando a página com as informações da empresa.</p>
-	<p>Essa é uma página simples, contendo cabeçalho e rodapé, e o conteúdo sendo um título e 2 parágrafos.</p>
-</div> <!--./container-->

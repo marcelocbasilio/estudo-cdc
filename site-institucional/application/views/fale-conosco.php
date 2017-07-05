@@ -50,6 +50,16 @@
 				</div> <!--./form-group-->
 
 				<div class="form-group">
+					<label class="col-md-2 control-label" for="captcha">Captcha</label> <!--./col-md-2 control-label-->
+					<div class="col-md-4">
+						<input type="text" id="captcha" name="captcha" placeholder="Captcha" class="form-control input-md" required>
+					</div> <!--./col-md-4-->
+					<div class="col-md-4">
+						<?php echo $captcha_image; ?>
+					</div> <!--./col-md-4-->
+				</div> <!--./form-group-->					
+
+				<div class="form-group">
 					<div class="col-md-10">
 						<input type="submit" value="Enviar" class="btn btn-default pull-right">
 					</div> <!--./col-md-8-->
